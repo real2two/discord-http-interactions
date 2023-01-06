@@ -1,0 +1,12 @@
+{
+	"name": "Node.js & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"portsAttributes": {
+		"3000": {
+			"label": "3000"
+		}
+	},
+	"forwardPorts": [3000, 5432]
+}
