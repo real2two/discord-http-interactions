@@ -19,3 +19,6 @@ src
     loader.js // Loads commands
     prisma.js // Initializes Prisma client
 ```
+
+TODO:
+- Automatically create commands.
