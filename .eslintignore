@@ -1,0 +1,9 @@
+**/*.json
+**/*.lock
+**/*.md
+**/*.css
+**/*.ico
+**/*.prisma
+**/*.toml
+**/*.sql
+**/*.yaml

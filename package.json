@@ -1,0 +1,37 @@
+{
+	"type": "module",
+	"main": "src/main/index.js",
+	"nodemonConfig": {
+		"ignore": [
+			".git",
+			"node_modules"
+		],
+		"watch": [
+			"./src/"
+		],
+		"exec": "npm start",
+		"ext": "ts, js"
+	},
+	"scripts": {
+		"start": "node --loader esm-module-alias/loader --no-warnings .",
+		"dev": "nodemon",
+		"prisma": "npx prisma db push"
+	},
+	"dependencies": {
+		"@prisma/client": "^4.8.0",
+		"discord-interactions": "^3.2.0",
+		"dotenv": "^16.0.3",
+		"esm-module-alias": "^2.0.2",
+		"glob": "^8.0.3",
+		"hyper-express": "^6.5.3",
+		"prisma": "^4.8.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	},
+	"aliases": {
+		"@/main": "src/main",
+		"@/commands": "src/commands",
+		"@/util": "src/util"
+	}
+}
