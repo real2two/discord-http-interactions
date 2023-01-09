@@ -1,7 +1,6 @@
 import app from './listen.js';
 import { verifyKey, InteractionType, InteractionResponseType, InteractionResponseFlags } from 'discord-interactions';
-import { ApplicationCommands } from '../util/loader.js';
-import { findCommand, handleCommand } from '../util/command.js'
+import { ApplicationCommands, findCommand, handleCommand } from '../util/commands.js'
 
 app.post("/interactions", async (req, res) => {
   // Checks if the request is from Discord
