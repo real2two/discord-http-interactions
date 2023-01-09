@@ -23,6 +23,3 @@ src
 tools
   createCommands.js // Creates commands
 ```
-
-TODO:
-- Automatically create commands.
