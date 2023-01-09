@@ -15,7 +15,8 @@
 	"scripts": {
 		"start": "node --loader esm-module-alias/loader --no-warnings .",
 		"dev": "nodemon",
-		"prisma": "npx prisma db push"
+		"prisma": "npx prisma db push",
+		"update-commands": "node --loader esm-module-alias/loader --experimental-fetch -r dotenv/config --no-warnings tools/createCommands.js" 
 	},
 	"dependencies": {
 		"@prisma/client": "^4.8.0",
