@@ -15,6 +15,9 @@ for (const file of files) {
     const command = await import(`../commands/${file}`);
 
     switch (command.type) {
+      // Interaction header (custom)
+      case 'header':
+        break;
       // Slash commands and autocomplete
       case InteractionType.APPLICATION_COMMAND:
       case InteractionType.APPLICATION_COMMAND_AUTOCOMPLETE:

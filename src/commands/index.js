@@ -3,7 +3,11 @@ import { InteractionType, InteractionResponseType } from 'discord-interactions';
 export const type = InteractionType.APPLICATION_COMMAND;
 export const name = 'challenge';
 
-export const execute = async (req, res) => {
+export const execute = ({ res, data }) => {
+  // Getting data from header.js
+  console.log(data.test);
+  
+  // Responding
   return res.json({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
