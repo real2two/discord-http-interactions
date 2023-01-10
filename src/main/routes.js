@@ -34,4 +34,4 @@ app.post("/interactions", async (req, res) => {
   await handleCommand(command, { req, res, data });
 });
 
-app.listen(parseInt(process.env.PORT || '3000') || 3000);
+app.listen(parseInt(process.env.PORT) || 3000);

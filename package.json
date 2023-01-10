@@ -16,7 +16,7 @@
 		"ext": "ts, js"
 	},
 	"scripts": {
-		"start": "node .",
+		"start": "node -r dotenv/config .",
 		"dev": "nodemon",
 		"prisma-push": "npx prisma db push",
 		"prisma-migrate": "npx prisma migrate dev --name init",
