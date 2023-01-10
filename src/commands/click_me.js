@@ -1,4 +1,4 @@
-import prisma from '../util/prisma.js'; // import prisma from '#util/prisma';
+import prisma from '#util/prisma.js';
 import { InteractionType, InteractionResponseType } from 'discord-interactions';
 
 export const type = InteractionType.MESSAGE_COMPONENT;
