@@ -4,7 +4,6 @@ specifiers:
   '@prisma/client': ^4.8.0
   discord-interactions: ^3.2.0
   dotenv: ^16.0.3
-  esm-module-alias: ^2.0.2
   glob: ^8.0.3
   hyper-express: ^6.5.3
   nodemon: ^2.0.20
@@ -14,7 +13,6 @@ dependencies:
   '@prisma/client': 4.8.1_prisma@4.8.1
   discord-interactions: 3.2.0
   dotenv: 16.0.3
-  esm-module-alias: 2.0.2
   glob: 8.0.3
   hyper-express: 6.5.3
   prisma: 4.8.1
@@ -51,25 +49,25 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 18.11.18
+      '@types/node': 16.18.11
     dev: false
 
   /@types/busboy/0.3.2:
     resolution: {integrity: sha512-iEvdm9Z9KdSs/ozuh1Z7ZsXrOl8F4M/CLMXPZHr3QuJ4d6Bjn+HBMC5EMKpwpAo8oi8iK9GZfFoHaIMrrZgwVw==}
     dependencies:
-      '@types/node': 18.11.18
+      '@types/node': 16.18.11
     dev: false
 
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 18.11.18
+      '@types/node': 16.18.11
     dev: false
 
   /@types/express-serve-static-core/4.17.32:
     resolution: {integrity: sha512-aI5h/VOkxOF2Z1saPy0Zsxs5avets/iaiAJYznQFm5By/pamU31xWKL//epiF4OfUA2qTOc9PV6tCUjhO8wlZA==}
     dependencies:
-      '@types/node': 18.11.18
+      '@types/node': 16.18.11
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
     dev: false
@@ -91,10 +89,6 @@ packages:
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: false
 
-  /@types/node/18.11.18:
-    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
-    dev: false
-
   /@types/qs/6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
     dev: false
@@ -107,7 +101,7 @@ packages:
     resolution: {integrity: sha512-z5xyF6uh8CbjAu9760KDKsH2FcDxZ2tFCsA4HIMWE6IkiYMXfVoa+4f9KX+FN0ZLsaMw1WNG2ETLA6N+/YA+cg==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 18.11.18
+      '@types/node': 16.18.11
     dev: false
 
   /abbrev/1.1.1:
@@ -216,10 +210,6 @@ packages:
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
-    dev: false
-
-  /esm-module-alias/2.0.2:
-    resolution: {integrity: sha512-seRq1o7sGkbb1pBVAo9L8F+yOYIqHC0O3Gqk/aDTr/10r3SNT7gyJKHYbO33aj96djBq2HfkkAsYdfDZSmJu0w==}
     dev: false
 
   /fill-range/7.0.1:

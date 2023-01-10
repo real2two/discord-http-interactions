@@ -1,5 +1,8 @@
 {
 	"type": "module",
+  "name": "http-interaction-template",
+  "version": "1.0.0",
+  "author": "Two",
 	"main": "src/main/index.js",
 	"nodemonConfig": {
 		"ignore": [
@@ -13,26 +16,21 @@
 		"ext": "ts, js"
 	},
 	"scripts": {
-		"start": "node --loader esm-module-alias/loader --no-warnings .",
+		"start": "node .",
 		"dev": "nodemon",
-		"prisma": "npx prisma db push",
-		"update-commands": "node --loader esm-module-alias/loader --experimental-fetch -r dotenv/config --no-warnings tools/createCommands.js" 
+		"prisma-push": "npx prisma db push",
+		"prisma-migrate": "npx prisma migrate dev --name init",
+		"update-commands": "node --experimental-fetch -r dotenv/config tools/createCommands.js"
 	},
 	"dependencies": {
 		"@prisma/client": "^4.8.0",
 		"discord-interactions": "^3.2.0",
 		"dotenv": "^16.0.3",
-		"esm-module-alias": "^2.0.2",
 		"glob": "^8.0.3",
 		"hyper-express": "^6.5.3",
 		"prisma": "^4.8.1"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.20"
-	},
-	"aliases": {
-		"@/main": "src/main",
-		"@/commands": "src/commands",
-		"@/util": "src/util"
 	}
 }

@@ -1,5 +1,9 @@
-import prisma from '@/util/prisma.js';
+import prima from '../util/prisma.js'; // import prisma from '#util/prisma';
 import { InteractionType, InteractionResponseType } from 'discord-interactions';
+
+console.log(1);
+console.log(prisma);
+console.log(2);
 
 export const type = InteractionType.MESSAGE_COMPONENT;
 export const custom_id = 'click_one'; // or regex: /click_one/
