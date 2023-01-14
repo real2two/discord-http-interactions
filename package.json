@@ -1,9 +1,8 @@
 {
-	"type": "module",
-  "name": "http-interaction-template",
-  "version": "1.0.0",
-  "author": "Two",
-	"main": "src/main/index.js",
+	"name": "http-interaction-template",
+	"version": "1.0.0",
+	"author": "Two",
+	"main": "src/main/index.ts",
 	"nodemonConfig": {
 		"ignore": [
 			".git",
@@ -16,11 +15,11 @@
 		"ext": "ts, js"
 	},
 	"scripts": {
-		"start": "node -r dotenv/config .",
+		"start": "node -r tsconfig-paths/register -r ts-node/register -r dotenv/config ./src/main/index.ts",
 		"dev": "nodemon",
 		"prisma-push": "npx prisma db push",
 		"prisma-migrate": "npx prisma migrate dev --name init",
-		"update-commands": "node --experimental-fetch -r dotenv/config tools/createCommands.js"
+		"update-commands": "node --experimental-fetch  -r tsconfig-paths/register -r ts-node/register -r dotenv/config tools/createCommands.js"
 	},
 	"dependencies": {
 		"@prisma/client": "^4.8.0",
@@ -28,12 +27,14 @@
 		"dotenv": "^16.0.3",
 		"glob": "^8.0.3",
 		"hyper-express": "^6.5.3",
-		"prisma": "^4.8.1"
+		"prisma": "^4.8.1",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.1.2",
+		"typescript": "^4.9.4"
 	},
 	"devDependencies": {
+		"@types/glob": "^8.0.0",
+		"@types/node": "^18.11.18",
 		"nodemon": "^2.0.20"
-	},
-	"imports": {
-		"#util/*": "./src/util/*"
 	}
 }

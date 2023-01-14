@@ -1,9 +1,10 @@
 import { InteractionType, InteractionResponseType, InteractionResponseFlags } from 'discord-interactions';
+import { InteractionData } from '../types/types';
 
 export const type = 'header';
-const started = Date.now();
+const started = new Date();
 
-export const execute = ({ req, res, data }) => {
+export const execute = ({ req, res, data } : InteractionData) => {
   // Handles expired interations
   if (
     req.body.type === InteractionType.MESSAGE_COMPONENT ||

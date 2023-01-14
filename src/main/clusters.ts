@@ -13,5 +13,5 @@ if (cluster.isPrimary) {
     console.log(`#${worker.process.pid} Worker died.`);
   });
 } else {
-  import('./routes.js');
+  import('./routes');
 }

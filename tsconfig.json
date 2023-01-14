@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "out",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "paths": {
+      "@/main/*": ["main/*"],
+      "@/routes/*": ["routes/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "exclude": ["node_modules", "**/*.json"]
+}

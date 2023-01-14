@@ -1,8 +1,6 @@
 # HTTP interactions template
 
-A little Discord HTTP interactions template I created which uses HyperExpress and Prisma.
-
-I could make a TypeScript template too. If anyone wants that, ask me on Discord.
+A little Discord HTTP interactions template I created which uses HyperExpress and Prisma.x
 
 `/interactions` is the HTTP interactions path.
 

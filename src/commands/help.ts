@@ -1,10 +1,11 @@
 import { InteractionType, InteractionResponseType } from 'discord-interactions';
+import { InteractionData } from '../types/types';
 
 export const type = InteractionType.APPLICATION_COMMAND;
 export const name = 'help';
 export const structure = {};
 
-export const execute = ({ res, data }) => {
+export const execute = ({ res, data } : InteractionData) => {
   // Getting data from header.js
   const test = data.test;
   
